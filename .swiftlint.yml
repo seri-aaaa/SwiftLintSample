@@ -1,0 +1,40 @@
+# 無効にするルール。
+disabled_rules:
+- trailing_whitespace
+- force_cast
+
+# デフォルト無効のルールのうち、有効にするもの。
+opt_in_rules:
+- attributes
+- closure_end_indentation
+- closure_spacing
+- conditional_returns_on_newline
+- empty_count
+- explicit_init
+- explicit_type_interface # new
+- fatal_error_message   # new
+- first_where
+- implicitly_unwrapped_optional # new
+- missing_docs
+- nimble_operator
+- number_separator
+- object_literal
+- operator_usage_whitespace
+- overridden_super_call
+- private_outlet
+- prohibited_super_call
+- redundant_nil_coalescing
+- switch_case_on_newline
+- valid_docs
+
+# 追加したOSSライブラリは対象に含めたくない
+excluded:
+- Pods/
+
+# 1行あたりの文字数制限を300に変更
+# プロジェクト作成時にデフォルトで追加されるコメントをひっかけないため
+line_length: 300
+
+# 変数名が3文字以上なら許可に変更
+identifier_name:
+  min_length: 3
