@@ -1,2 +1,4 @@
 # SwiftLintSample
 SwiftLintのMy設定
+
+自分がよく使う設定に合わせたSwiftLintの設定を行う
